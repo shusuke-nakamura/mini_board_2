@@ -31,8 +31,8 @@ var session_opt = {
 
 app.use(session(session_opt));
 
-app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/', indexRouter);
 app.use('/home', homeRouter);
 
 // catch 404 and forward to error handler
